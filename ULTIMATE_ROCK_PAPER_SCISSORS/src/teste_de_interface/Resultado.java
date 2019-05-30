@@ -56,7 +56,7 @@ public class Resultado {
                     case 0:
                         exit.setText("Not good enought, i'll try again now");
                         message="NOT BAD AT ALL";
-                        color="#ff7b00";
+                        color="#d65c00";
                         break;
                     case 1:
                         exit.setText("Hell year i'm too good for this game");
@@ -82,7 +82,7 @@ public class Resultado {
                     case 1:
                         exit.setText("Not good enought, i'll try again now");
                         message="NOT BAD AT ALL";
-                        color="#ff7b00";
+                        color="#d65c00";
                         break;
                     case 2:
                         exit.setText("Hell year i'm too good for this game");
@@ -107,7 +107,7 @@ public class Resultado {
                     case 2:
                         exit.setText("Not good enought, i'll try again now");
                         message="NOT BAD AT ALL";
-                        color="#ff7b00";
+                        color="#d65c00";
                         break;
                 }
                 break;   
@@ -116,8 +116,8 @@ public class Resultado {
         Label text = new Label(message);
         window.setTitle(message);
         Label uptext = new Label("The oponent choose:");
-        uptext.setStyle("-fx-font-size:30");
-        text.setStyle("-fx-font-size:30; -fx-text-fill: "+color+"");
+        uptext.setStyle("-fx-font-size:30;-fx-font-weight:bold");
+        text.setStyle("-fx-font-size:50; -fx-text-fill: "+color+";-fx-font-weight:bold");
         layout.setStyle("-fx-border-color: "+color+"");
         imagem = new ImageView();
         imagem.setImage(resultimage);
@@ -125,6 +125,7 @@ public class Resultado {
         imagem.setFitWidth(200);
         layout.getChildren().addAll(uptext,imagem,text,exit);
         layout.setAlignment(Pos.CENTER);
+        layout.setId("pane");
         cena.getStylesheets().addAll(Teste_de_Interface.class.getResource("fundoresult.css").toExternalForm());
         window.showAndWait();
     }

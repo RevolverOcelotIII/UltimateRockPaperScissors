@@ -92,7 +92,7 @@ public class Teste_de_Interface extends Application{
         entirelayout.setTop(layout);
         entirelayout.setBottom(buttons);
         Scene cena = new Scene(entirelayout,500,250);
-        //entirelayout.getStylesheets().addAll(Teste_de_Interface.class.getResource("fundo.css").toExternalForm());
+        entirelayout.setId("pane");
         cena.getStylesheets().addAll(Teste_de_Interface.class.getResource("fundo.css").toExternalForm());
         primarystage.setMaxWidth(500);
         primarystage.setMaxHeight(250);
