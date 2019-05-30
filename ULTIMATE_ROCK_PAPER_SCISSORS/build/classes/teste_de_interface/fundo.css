@@ -1,10 +1,10 @@
 #pane{
 
-    -fx-background-image: url("fundo.png");
+    -fx-background-image: url("backgroundfirst.jpg");
 
     -fx-background-repeat: stretch;
 
-    -fx-background-size: 450 450;
+    -fx-background-size: 700 450;
 
     -fx-background-position: center center;
 
